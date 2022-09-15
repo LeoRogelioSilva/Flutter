@@ -10,23 +10,14 @@ class LeoScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
           Container(
-            /*
-  Maneira clássica de adicionar uma
-  borda. Vamos simplesmente circular
-  as bordas do container.
-  */
             margin: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              // Fazendo a borda circular.
               borderRadius: BorderRadius.circular(25),
-
-              // Colocando borda em todos os lados.
               border: Border.all(
                 color: Colors.black,
                 width: 5.0,
               ),
             ),
-            // Arredondando também a imagem.
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
