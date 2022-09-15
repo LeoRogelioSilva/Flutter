@@ -19,26 +19,44 @@ class CompleteFormState extends State<CompleteForm> {
         children: <Widget>[
           TextFormField(
             decoration: const InputDecoration(
-              hintText: 'Enter your email',
+              hintText: 'Login',
             ),
+            validator: (String? value) {
+              if (value == null || value.isEmpty) {
+                return 'Insira seu login';
+              }
+              return null;
+            },
+            onSaved: (value) {
+              String? login = value;
+            },
+          ),
+          TextFormField(
+            decoration: const InputDecoration(
+              hintText: 'Senha',
+            ),
+            obscureText: true,
+            enableSuggestions: false,
+            autocorrect: false,
             validator: (String? value) {
               if (value == null || value.isEmpty) {
                 return 'Please enter some text';
               }
               return null;
             },
+            onSaved: (value) {
+              String? senha = value;
+            },
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16.0),
             child: ElevatedButton(
               onPressed: () {
-                // Validate will return true if the form is valid, or false if
-                // the form is invalid.
                 if (_formKey.currentState!.validate()) {
-                  // Process data.
+                  _formKey.currentState?.save();
                 }
               },
-              child: const Text('Submit'),
+              child: const Text('Enviar'),
             ),
           ),
         ],
