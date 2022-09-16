@@ -19,11 +19,12 @@ class LeoScreen extends StatelessWidget {
               ),
             ),
             child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Image.asset(
-                  'assets/images/pp.jpg',
-                  width: 200,
-                )),
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                'assets/images/pp.jpg',
+                width: 200,
+              ),
+            ),
           ),
           const Text("Leo Rogelio",
               style: TextStyle(
@@ -33,7 +34,7 @@ class LeoScreen extends StatelessWidget {
                 letterSpacing: 2, // Default is one
               )),
           const Text(
-            "MIAAAAAAAAAAAAAAAAAAAAAUUU",
+            "",
             style: TextStyle(
                 fontSize: 10,
                 color: Colors.orange,

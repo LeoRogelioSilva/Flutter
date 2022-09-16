@@ -28,9 +28,9 @@ class MyApp extends StatelessWidget {
               ),
               body: const TabBarView(
                 children: [
-                  CompleteForm(),
                   LeoScreen(),
                   BrunoScreen(),
+                  CompleteForm(),
                 ],
               ))),
     );
