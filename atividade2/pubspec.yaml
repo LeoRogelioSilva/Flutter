@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   lottie: ^1.4.3
   email_validator: ^2.1.17
+  animate_do: ^2.1.0
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:
