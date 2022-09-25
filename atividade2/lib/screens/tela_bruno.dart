@@ -30,11 +30,11 @@ class BrunoScreen extends StatelessWidget {
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
-                  'assets/images/bruno.jpg',
+                  'assets/images/rir.jpg',
                   width: 200,
                 )),
           ),
-          const Text("Prof. Ulisses  Dias",
+          const Text("Bruno Klimowitsch",
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -42,7 +42,7 @@ class BrunoScreen extends StatelessWidget {
                 letterSpacing: 2, // Default is one
               )),
           const Text(
-            "Professor de Programação para Dispositivos Móveis da Faculdade de Tecnologia da Unicamp. A plataforma de desenvolvimento é o Flutter",
+            "Estudante do sexto semestre de Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia da Unicamp.",
             style: TextStyle(
                 fontSize: 10,
                 color: Colors.blue,

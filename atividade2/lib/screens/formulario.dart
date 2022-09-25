@@ -78,7 +78,7 @@ class CompleteFormState extends State<CompleteForm> {
                   return 'Insira a Senha!';
                 }
                 if (value.length < 8) {
-                  return 'Senha inválida!';
+                  return 'Senha inválida! Mínimo de caracteres: 8';
                 }
                 return null;
               },
@@ -94,22 +94,26 @@ class CompleteFormState extends State<CompleteForm> {
                       ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           backgroundColor: Colors.green,
-                          duration: const Duration(seconds: 5),
-                          content: Text("Bem Vindo ${_newUser.toString()}!"),
-                          action:
-                              SnackBarAction(label: "Home", onPressed: () {}),
+                          duration: const Duration(seconds: 10),
+                          content: Text(
+                              "Bem Vindo ${_newUser.toString()}!\nSeu e-mail é  ${_newUser.email.toString()}"),
+                          action: SnackBarAction(
+                              label: "HomePage",
+                              onPressed: () {
+                                //vai pra tela inicial
+                              }),
                         ),
                       );
                     }
                   },
                   child: const Text('Enviar'),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    //vai pra pagina de cadastro
-                  },
-                  child: const Text('Cadastrar'),
-                ),
+                //    ElevatedButton(
+                //    onPressed: () {
+                //       //vai pra pagina de cadastro
+                //    },
+                //   child: const Text('Cadastrar'),
+                //   ),
               ]),
             )
           ],
