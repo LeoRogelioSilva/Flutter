@@ -1,4 +1,3 @@
-import 'package:e_forms_intro/model/login_data.dart';
 import 'package:flutter/material.dart';
 import 'package:e_forms_intro/model/user.dart';
 import 'package:email_validator/email_validator.dart';
