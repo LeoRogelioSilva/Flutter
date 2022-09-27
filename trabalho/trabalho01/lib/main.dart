@@ -11,28 +11,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aula 04',
+      title: 'Trabaio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: DefaultTabController(
-          length: 3,
-          child: Scaffold(
-              appBar: AppBar(
-                bottom: const TabBar(tabs: [
-                  Tab(icon: Icon(Icons.account_circle_outlined)),
-                  Tab(icon: Icon(Icons.account_circle_outlined)),
-                  Tab(icon: Icon(Icons.aod_outlined)),
-                ]),
-                title: const Text("Aula 04"),
-              ),
-              body: const TabBarView(
-                children: [
-                  LeoScreen(),
-                  BrunoScreen(),
-                  CompleteForm(),
-                ],
-              ))),
+        length: 3,
+        child: Scaffold(
+          appBar: AppBar(
+            bottom: const TabBar(tabs: [
+              Tab(icon: Icon(Icons.account_circle_outlined)),
+              Tab(icon: Icon(Icons.account_circle_outlined)),
+              Tab(icon: Icon(Icons.aod_outlined)),
+            ]),
+            title: const Text("Trabaio"),
+          ),
+          body: const TabBarView(
+            children: [
+              LeoScreen(),
+              BrunoScreen(),
+              CompleteForm(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
