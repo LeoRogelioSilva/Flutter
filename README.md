@@ -4,3 +4,7 @@
 <h3>A pasta <a href="https://github.com/LeoRogelioSilva/Flutter/tree/main/atividades">Atividades</a> contém os arquivos das atividades propostas pelo professor.</h3>
 <hr>
 <h3>A pasta <a href="https://github.com/LeoRogelioSilva/Flutter/tree/main/trabalho">Trabalho</a> contém os arquivos do trabalho final da disciplina.</h3>
+<hr>
+<br>
+<h4>Referências: </h4>
+<ul><li><a href="https://fluttericon.com/">Flutter Icons</a></li></ul>
