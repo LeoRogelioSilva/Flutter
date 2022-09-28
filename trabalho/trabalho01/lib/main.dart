@@ -1,6 +1,6 @@
-import 'package:e_forms_intro/screens/tela_leo.dart';
-import 'package:e_forms_intro/screens/tela_bruno.dart';
-import 'package:e_forms_intro/screens/formulario.dart';
+import 'package:trabalho01/screens/tela_leo.dart';
+import 'package:trabalho01/screens/tela_bruno.dart';
+import 'package:trabalho01/screens/tela_login.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: DefaultTabController(
-        length: 3,
+        length: 1,
         child: Scaffold(
           appBar: AppBar(
             bottom: const TabBar(tabs: [
@@ -28,9 +28,7 @@ class MyApp extends StatelessWidget {
           ),
           body: const TabBarView(
             children: [
-              LeoScreen(),
-              BrunoScreen(),
-              CompleteForm(),
+              LoginScreen(),
             ],
           ),
         ),
