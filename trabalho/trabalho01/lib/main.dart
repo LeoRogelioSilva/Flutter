@@ -2,6 +2,7 @@ import 'package:trabalho01/screens/tela_leo.dart';
 import 'package:trabalho01/screens/tela_bruno.dart';
 import 'package:trabalho01/screens/tela_login.dart';
 import 'package:flutter/material.dart';
+import 'package:trabalho01/screens/tela_monta_dieta.dart';
 
 void main() => runApp(const MyApp());
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
           body: const TabBarView(
             children: [
               LoginScreen(),
+              MontaDieta(),
             ],
           ),
         ),
