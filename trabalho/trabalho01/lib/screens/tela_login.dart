@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:e_forms_intro/model/user.dart';
+import 'package:trabalho01/model/user.dart';
 import 'package:email_validator/email_validator.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -8,6 +8,8 @@ class LoginScreen extends StatefulWidget {
   @override
   State<LoginScreen> createState() => CompleteFormState();
 }
+
+String? _character;
 
 class CompleteFormState extends State<LoginScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
@@ -71,6 +73,30 @@ class CompleteFormState extends State<LoginScreen> {
               },
               onSaved: (value) => _newUser.senha = value,
             ),
+            ListTile(
+              title: const Text('Masculino'),
+              leading: Radio<String>(
+                value: "masculino",
+                groupValue: _character,
+                onChanged: (value) {
+                  setState(() {
+                    _character = value;
+                  });
+                },
+              ),
+            ),
+            ListTile(
+              title: const Text('Feminino'),
+              leading: Radio<String>(
+                value: "feminino",
+                groupValue: _character,
+                onChanged: (value) {
+                  setState(() {
+                    _character = value;
+                  });
+                },
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Row(children: [
@@ -83,7 +109,7 @@ class CompleteFormState extends State<LoginScreen> {
                           backgroundColor: Colors.green,
                           duration: const Duration(seconds: 10),
                           content: Text(
-                              "Bem Vindo ${_newUser.toString()}!\nSeu e-mail é  ${_newUser.email.toString()}"),
+                              "Bem vindo, ${_newUser.toString()}!\nSeu sexo é  ${_character.toString().characters}"),
                           action: SnackBarAction(
                               label: "HomePage",
                               onPressed: () {
