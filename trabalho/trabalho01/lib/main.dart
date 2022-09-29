@@ -1,5 +1,3 @@
-import 'package:trabalho01/screens/tela_leo.dart';
-import 'package:trabalho01/screens/tela_bruno.dart';
 import 'package:trabalho01/screens/tela_login.dart';
 import 'package:flutter/material.dart';
 import 'package:trabalho01/screens/tela_monta_dieta.dart';
@@ -12,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Trabaio',
+      title: 'Trabalho 1',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: DefaultTabController(
-        length: 1,
+        length: 2,
         child: Scaffold(
           appBar: AppBar(
             bottom: const TabBar(tabs: [
@@ -25,7 +23,7 @@ class MyApp extends StatelessWidget {
               Tab(icon: Icon(Icons.account_circle_outlined)),
               Tab(icon: Icon(Icons.aod_outlined)),
             ]),
-            title: const Text("Trabaio"),
+            title: const Text("Trabalho 1"),
           ),
           body: const TabBarView(
             children: [
