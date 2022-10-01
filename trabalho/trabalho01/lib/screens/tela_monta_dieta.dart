@@ -33,7 +33,7 @@ class CompleteFormState extends State<MontaDieta> {
                   subtitle: Text(subtitles[index]),
                   leading: CircleAvatar(
                       child: Image.asset(
-                    'assets/images/arnold.jpg',
+                    'assets/images/arnold.png',
                     width: 200,
                   )),
                   trailing: Icon(icons[index])));

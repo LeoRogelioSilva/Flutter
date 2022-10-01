@@ -1,10 +1,14 @@
+// @dart=2.17
 import 'package:trabalho01/screens/tela_leo.dart';
 import 'package:trabalho01/screens/tela_bruno.dart';
 import 'package:trabalho01/screens/tela_login.dart';
 import 'package:flutter/material.dart';
 import 'package:trabalho01/screens/tela_monta_dieta.dart';
+import 'package:trabalho01/screens/tela_monta_treino.dart';
 
 void main() => runApp(const MyApp());
+
+#jsfjisdnfdskmf
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: DefaultTabController(
-        length: 1,
+        length: 3,
         child: Scaffold(
           appBar: AppBar(
             bottom: const TabBar(tabs: [
@@ -31,6 +35,7 @@ class MyApp extends StatelessWidget {
             children: [
               LoginScreen(),
               MontaDieta(),
+              MontaTreino(),
             ],
           ),
         ),
